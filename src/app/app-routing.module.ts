@@ -5,7 +5,7 @@ const routes: Routes = [
   {
     path: 'admin',
     loadChildren: () =>
-      import('./private/admin/admin.module').then((m) => m.AdminModule),
+      import('./private/admin.module').then((m) => m.AdminModule),
   },
   {
     path: 'home',
