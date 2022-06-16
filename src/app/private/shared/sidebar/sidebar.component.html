@@ -7,6 +7,9 @@
         <h4 class="name">Admin</h4>
         <p class="mail">admin@email.com</p>
     </div>
+    <div class="logout">
+        <button mat-button><mat-icon>power_settings_new</mat-icon></button>
+    </div>
     <div class="menu">
         <div class="menu-head">
             <span>dashboard</span>
@@ -16,9 +19,9 @@
                 <mat-icon>dashboard</mat-icon>
                 <span>home</span>
             </button>
-            <button mat-button class="menu-button">
-                <mat-icon>message</mat-icon>
-                <span>conmments</span>
+            <button mat-button class="menu-button" [routerLink]="['/admin/products']">
+                <mat-icon>redeem</mat-icon>
+                <span>Products</span>
             </button>
             <button mat-button class="menu-button">
                 <mat-icon>pages</mat-icon>
@@ -28,7 +31,6 @@
                 <mat-icon>settings</mat-icon>
                 <span>Setting</span>
             </button>
-
         </div>
     </div>
 </div>
