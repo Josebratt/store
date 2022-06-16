@@ -10,9 +10,9 @@ const routes: Routes = [
   {
     path: 'home',
     loadChildren: () =>
-      import('./public/home/home.module').then((m) => m.HomeModule),
+      import('./public/home.module').then((m) => m.HomeModule),
   },
-  { path: '**', pathMatch: 'full', redirectTo: 'admin' },
+  { path: '**', pathMatch: 'full', redirectTo: 'home' },
 ];
 
 @NgModule({
