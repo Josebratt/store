@@ -1,2 +1,22 @@
-<p>admin works!</p>
-<button mat-raised-button color="primary">Primary</button>
+<mat-sidenav-container>
+  <mat-sidenav #sidenav mode="side" opened>
+        <app-sidebar></app-sidebar>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <div class="content">
+        <div class="toolbar">
+            <mat-toolbar>
+                <mat-icon (click)="sidenav.toggle()" aria-hidden="false" aria-label="menu icon">menu</mat-icon>
+                <div class="box">
+                    <mat-icon>search</mat-icon>
+                    <mat-icon>bookmark</mat-icon>
+                    <mat-icon>mail_outline</mat-icon>
+                </div>
+            </mat-toolbar>
+        </div>
+        <div class="main">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>
