@@ -13,9 +13,19 @@ mat-icon {
     border-radius: 50%;
 }
 
+.logout {
+    margin-top: -20px;
+    margin-left: 105px;
+    margin-bottom: 10px;
+}
+
+.logout mat-icon:hover{
+    color: red;
+}
+
 .user {
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     font-weight: 800;
 }
 
